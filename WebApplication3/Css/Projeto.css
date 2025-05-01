@@ -1,0 +1,143 @@
+﻿/* PROJETO WEB - ESTRUTURA DA MASTER PAGE */
+
+
+/* CABEÇALHO  */
+
+.padrao {
+    color: white;
+    text-align: justify;
+    text-decoration: none;
+}
+
+.codigo {
+    width: 100%;
+    align-content: center;
+    background-color: #1e1e1e;
+    padding: 2px 20px 2px;
+}
+
+.imagem-topo {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    height: 500px;
+    box-shadow: 2px 2px 2px gray;
+}
+
+.centralizar {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.informativo {
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 1px;
+    padding: 7px 12px;
+    background-color: #025baf;
+    font-family: Unispace;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.icone {
+    top: 10px;
+    height: 15px;
+}
+
+.fundo {
+    background-image: url("../Images/imagem-fundo.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.fundo2 {
+    background-image: url("../Images/imagem-fundo2.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.botao {
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 7px 12px;
+    background-color: #025baf;
+    box-shadow: 2px 2px 2px #053767;
+    font-family: Unispace;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.cabecalho {
+    height: 81px;
+    width: 100%;
+    border-bottom: 1.5px solid #bdbaba;
+}
+
+.logomarca {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    height: 80px;
+    width: 80px;
+}
+
+.barra-titulo {
+    position: absolute;
+    top: 20px;
+    left: 150px;
+    bottom: 40px;
+    height: 30px;
+    padding: 14px;
+    color: #053767;
+}
+
+.barra-menu {
+    position: absolute;
+    top:30px;
+    left: 81px;
+    right: 40px;
+    height: 40px;
+    text-align: right;
+}
+
+    .barra-menu a {
+        color: #333333;
+        font-size: 14px;
+        margin-left: 4px;
+        margin-right: 4px;
+        padding-bottom: 2px;
+        text-decoration: none;
+        border-bottom: 3px solid transparent;
+    }
+
+        .barra-menu a:hover {
+            color: black;
+            border-bottom: 3px solid black;
+        }
+
+
+.conteudo {
+    min-height: 1000px;
+}
+
+.rodape {
+    min-height: 100px;
+    padding-top: 30px;
+    border-top: 1.5px solid #bdbaba;
+}
+
+.rodape-texto {
+    text-decoration: none;
+    font-family: Unispace;
+    color: dimgray;
+    font-size: 15px;
+    margin-top: 10px;
+}

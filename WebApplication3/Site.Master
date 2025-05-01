@@ -1,0 +1,116 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebApplication3.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Página do Dev Web</title>
+    <link rel="shortcut icon" type="imagex/png" href="~/Images/marca1.png">
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <!-- CSS -->
+    <link href="Css/Projeto.css" rel="stylesheet" />
+    <link href="Css/StyleSheet.css" rel="stylesheet" />
+
+    <!-- JAVASCRIPT -->
+    <script src="Javascript/jquery-1.7.2.min.js"></script>
+    <script src="Javascript/flexslider.min.js"></script>
+    <link href="Javascript/flexslider.css" rel="stylesheet" />
+
+</head>
+
+<body class="fundo2">
+    <form id="form1" runat="server">
+
+        <!-- CABEÇALHO -->
+        <header class="cabecalho fundo">
+            <div class="logomarca">
+                <asp:Image ID="Image1" ImageUrl="~/Images/marca1.png" runat="server" />
+            </div>
+
+            <div class="barra-titulo">
+                <h1 style="color: #044a89;">Página do Dev Web</h1>
+            </div>
+
+            <nav class="barra-menu">
+                <asp:HyperLink Style="font-family: Unispace;" NavigateUrl="~/Default.aspx" ID="HyperLink1" runat="server">
+                    <asp:Image class="icone" ID="Image2" ImageUrl="~/Images/icon_website.png" runat="server" />
+                    HOME
+                </asp:HyperLink>
+
+                <asp:HyperLink Style="font-family: Unispace;" NavigateUrl="~/Contato.aspx" ID="HyperLink2" runat="server">
+                    <asp:Image class="icone" ID="Image3" ImageUrl="~/Images/icon_faleconosco.png" runat="server" />
+                    CONTATO
+                </asp:HyperLink>
+
+                <asp:HyperLink Style="font-family: Unispace;" NavigateUrl="~/ExibirLog.aspx" ID="HyperLink3" runat="server">
+                    <asp:Image class="icone" ID="Image4" ImageUrl="~/Images/icon_log.png" runat="server" />
+                    EXIBIR LOGS
+                </asp:HyperLink>
+            </nav>
+        </header>
+
+        <!-- CONTEÚDO -->
+        <main class="conteudo">
+            <asp:ContentPlaceHolder ID="Conteudo" runat="server">
+            </asp:ContentPlaceHolder>
+        </main>
+
+        <!-- RODAPÉ -->
+        <footer class="rodape fundo margin-top-60">
+            <div class="content-wrap">
+                <h3>Página do Dev Web</h3>
+                <br />
+            </div>
+            <div class="row content-wrap">
+                <div class="col-4">
+                    <h3>Páginas do Site</h3>
+                    <nav style="margin-top: 10px">
+                        <asp:HyperLink class="rodape-texto" NavigateUrl="~/Html.aspx" ID="HyperLink7" runat="server">Desvendando o HTML</asp:HyperLink>
+                        <br />
+                        <asp:HyperLink class="rodape-texto" NavigateUrl="~/Css.aspx" ID="HyperLink8" runat="server">Dominando o CSS</asp:HyperLink>
+                        <br />
+                        <asp:HyperLink class="rodape-texto" NavigateUrl="~/CSharp.aspx" ID="HyperLink9" runat="server">Introdução ao C#</asp:HyperLink>
+                        <br />
+                        <asp:HyperLink class="rodape-texto" NavigateUrl="~/GitGitHub.aspx" ID="HyperLink10" runat="server">Git e GitHub</asp:HyperLink>
+                    </nav>
+                </div>
+
+                <div class="col-4">
+                    <h3>Páginas de Aprendizado</h3>
+                    <nav style="margin-top: 10px">
+                        <asp:HyperLink class="rodape-texto" NavigateUrl="https://www.alura.com.br/" target="_blank" ID="HyperLink11" runat="server">Alura</asp:HyperLink>
+                        <br />
+                        <asp:HyperLink class="rodape-texto" NavigateUrl="https://www.w3schools.com/" target="_blank" ID="HyperLink12" runat="server">W3 Schools</asp:HyperLink>
+                        <br />
+                        <asp:HyperLink class="rodape-texto" NavigateUrl="https://www.coursera.org/" target="_blank" ID="HyperLink13" runat="server">Coursera</asp:HyperLink>
+                        <br />
+                        <asp:HyperLink class="rodape-texto" NavigateUrl="https://www.netacad.com/" target="_blank" ID="HyperLink14" runat="server">Cisco NetAcad</asp:HyperLink>
+                        <br />
+                        <asp:HyperLink class="rodape-texto" NavigateUrl="https://learn.microsoft.com/pt-br/" target="_blank" ID="HyperLink15" runat="server">Microsoft Learn</asp:HyperLink>
+                        <br />
+                        <asp:HyperLink class="rodape-texto" NavigateUrl="https://aws.amazon.com/pt/?nc2=h_lg" target="_blank" ID="HyperLink16" runat="server">Amazon AWS</asp:HyperLink>
+                    </nav>
+                </div>
+
+                <div class="col-4">
+                    <h3>Navegação Rápida</h3>
+                    <nav style="margin-top: 10px;">
+                        <asp:HyperLink class="rodape-texto" Style="margin-top: 20px" NavigateUrl="~/Default.aspx" ID="HyperLink4" runat="server">Home</asp:HyperLink>
+                        <br />
+                        <asp:HyperLink class="rodape-texto" NavigateUrl="~/Contato.aspx" ID="HyperLink5" runat="server">Contato</asp:HyperLink>
+                        <br />
+                        <asp:HyperLink class="rodape-texto" NavigateUrl="~/ExibirLog.aspx" ID="HyperLink6" runat="server">Exibir Logs</asp:HyperLink>
+                    </nav>
+                </div>
+            </div>
+            <br />
+        </footer>
+
+    </form>
+</body>
+
+</html>
