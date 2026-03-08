@@ -50,6 +50,14 @@
                     <asp:Image class="icone" ID="Image4" ImageUrl="~/Images/icon_log.png" runat="server" />
                     EXIBIR LOGS
                 </asp:HyperLink>
+
+                <asp:HyperLink Style="font-family: Unispace;" NavigateUrl="~/Admin/ExibirUsuarios.aspx" ID="HyperLink18" runat="server">
+                    <asp:Image class="icone" ID="Image5" ImageUrl="~/Images/Competencias.png" runat="server" />
+                    USUÁRIOS
+                </asp:HyperLink>
+
+                <asp:LinkButton Style="font-family: Unispace;" ID="Deslogar" OnClick="Deslogar_Click" runat="server">SAIR</asp:LinkButton>
+
             </nav>
         </header>
 
@@ -82,17 +90,17 @@
                 <div class="col-4">
                     <h3>Páginas de Aprendizado</h3>
                     <nav style="margin-top: 10px">
-                        <asp:HyperLink class="rodape-texto" NavigateUrl="https://www.alura.com.br/" target="_blank" ID="HyperLink11" runat="server">Alura</asp:HyperLink>
+                        <asp:HyperLink class="rodape-texto" NavigateUrl="https://www.alura.com.br/" Target="_blank" ID="HyperLink11" runat="server">Alura</asp:HyperLink>
                         <br />
-                        <asp:HyperLink class="rodape-texto" NavigateUrl="https://www.w3schools.com/" target="_blank" ID="HyperLink12" runat="server">W3 Schools</asp:HyperLink>
+                        <asp:HyperLink class="rodape-texto" NavigateUrl="https://www.w3schools.com/" Target="_blank" ID="HyperLink12" runat="server">W3 Schools</asp:HyperLink>
                         <br />
-                        <asp:HyperLink class="rodape-texto" NavigateUrl="https://www.coursera.org/" target="_blank" ID="HyperLink13" runat="server">Coursera</asp:HyperLink>
+                        <asp:HyperLink class="rodape-texto" NavigateUrl="https://www.coursera.org/" Target="_blank" ID="HyperLink13" runat="server">Coursera</asp:HyperLink>
                         <br />
-                        <asp:HyperLink class="rodape-texto" NavigateUrl="https://www.netacad.com/" target="_blank" ID="HyperLink14" runat="server">Cisco NetAcad</asp:HyperLink>
+                        <asp:HyperLink class="rodape-texto" NavigateUrl="https://www.netacad.com/" Target="_blank" ID="HyperLink14" runat="server">Cisco NetAcad</asp:HyperLink>
                         <br />
-                        <asp:HyperLink class="rodape-texto" NavigateUrl="https://learn.microsoft.com/pt-br/" target="_blank" ID="HyperLink15" runat="server">Microsoft Learn</asp:HyperLink>
+                        <asp:HyperLink class="rodape-texto" NavigateUrl="https://learn.microsoft.com/pt-br/" Target="_blank" ID="HyperLink15" runat="server">Microsoft Learn</asp:HyperLink>
                         <br />
-                        <asp:HyperLink class="rodape-texto" NavigateUrl="https://aws.amazon.com/pt/?nc2=h_lg" target="_blank" ID="HyperLink16" runat="server">Amazon AWS</asp:HyperLink>
+                        <asp:HyperLink class="rodape-texto" NavigateUrl="https://aws.amazon.com/pt/?nc2=h_lg" Target="_blank" ID="HyperLink16" runat="server">Amazon AWS</asp:HyperLink>
                     </nav>
                 </div>
 
